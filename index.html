@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniNote - Fikirlerinizi Özgür Bırakın</title>
+    <style>
+        :root {
+            --accent: #34C759;
+            --accent-dark: #2AA149;
+            --bg: #F5F7FA;
+            --card: #FFFFFF;
+            --border: #E2E8F0;
+            --text-strong: #1A202C;
+            --text-body: #4A5568;
+            --text-muted: #A0AEC0;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0; padding: 0; background-color: var(--bg); color: var(--text-strong);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            min-height: 100vh; text-align: center;
+        }
+        .container { max-width: 720px; padding: 48px 20px; }
+        h1 {
+            font-size: 3.5rem; margin-bottom: 10px; font-weight: 800;
+            color: var(--accent);
+        }
+        .lede { font-size: 1.2rem; color: var(--text-body); margin-bottom: 40px; line-height: 1.5; }
+        .btn-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+        .btn {
+            display: inline-block; padding: 16px 32px; font-size: 1.1rem; font-weight: 700;
+            text-decoration: none; border-radius: 30px; transition: all 0.25s ease;
+            box-shadow: 0 6px 18px rgba(52, 199, 89, 0.25);
+        }
+        .btn-android { background-color: var(--accent); color: #fff; }
+        .btn-android:hover { background-color: var(--accent-dark); transform: translateY(-3px); }
+        .instructions {
+            background: var(--card); padding: 28px; border-radius: 16px; text-align: left;
+            margin-top: 24px; border: 1px solid var(--border); border-left: 4px solid var(--accent);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+        .instructions h3 { margin-top: 0; color: var(--accent-dark); }
+        .instructions ol { padding-left: 20px; color: var(--text-body); }
+        .instructions li { margin-bottom: 12px; line-height: 1.5; }
+        .foot { margin-top: 28px; color: var(--text-muted); font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OmniNote</h1>
+        <p class="lede">Hızlı, pratik ve her an yanınızda. Notlarınız, çizimleriniz ve ses kayıtlarınız tek bir uygulamada.</p>
+
+        <div class="btn-group">
+            <!-- APK web sayfasıyla birlikte deploy edilir ve doğrudan indirilir -->
+            <a href="/omninote.apk" class="btn btn-android" download>🤖 Android (APK) İndir</a>
+        </div>
+
+        <div class="instructions">
+            <h3>⚙️ Kurulum Rehberi (Android)</h3>
+            <ol>
+                <li>Yukarıdaki <strong>Android (APK) İndir</strong> butonuna basın.</li>
+                <li>İndirme bitince APK dosyasını açın.</li>
+                <li>Telefonunuz güvenlik uyarısı verirse, ayarlardan tarayıcınıza/dosya yöneticinize <strong>"Bilinmeyen kaynaklardan uygulama yükleme"</strong> iznini verin.</li>
+                <li>Kurulumu tamamlayın ve OmniNote'u açın. 🎉</li>
+            </ol>
+        </div>
+
+        <p class="foot">iOS sürümü yakında.</p>
+    </div>
+</body>
+</html>
