@@ -2,3 +2,5 @@ node_modules/
 omninote-app/node_modules/
 not-plus/not-plus/node_modules/
 *.msi
+.vercel/
+.vercel
